@@ -9,14 +9,23 @@ body{
   font-family:'Poppins', sans-serif;
   background:#fff7fb;
   color:#111;
-padding-top: 170px;
+padding-top: 120px;
   overflow-x:hidden;
-  padding-top:150px;
+  
 }
 @media(max-width:768px){
 body{
 padding-top:220px;
 }
+}
+@media (max-width: 768px){
+  body{
+    padding-top: 160px;
+  }
+
+  .main-navbar{
+    top: 60px;
+  }
 }
 @media(max-width:576px){
 
@@ -759,16 +768,28 @@ background:var(--pink);
  }
 
  /* =====   SEARCH BAR ===== */
-
 #searchForm {
   display: flex;
   align-items: stretch;
-  width: 600px;
-  max-width: 600px;
+  width: 100%;
+  max-width: 100%;
   background: #fff;
   border: 1px solid #ddd;
-  border-radius: 0;   
-  overflow: hidden;   
+  border-radius: 0;
+  overflow: hidden;
+  flex: 1;
+}
+
+@media (max-width: 768px){
+  #searchForm{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #searchForm select,
+  #searchForm input{
+    width: 100%;
+  }
 }
 
 /* ALL  */
