@@ -187,7 +187,7 @@ let allProducts = [
   {name:"Soft jewelry", price:20000, cat:"jewelry", img:"jewelry26.jpg"},
 {name:"Stylish Hazaragi jewelry ", price:4000, cat:"jewelry", img:"jewelry27.jpg"},
   {name:"Stylish jewelry ", price:16000, cat:"jewelry", img:"jewelry28.jpg"},
-  {name:" Hazaragi jewelry", price:17000, cat:"jewelry", img:"images/jewelry29.jpg"},
+  {name:" Hazaragi jewelry", price:17000, cat:"jewelry", img:"jewelry29.jpg"},
   {name:"Deep red festive jewelry ", price:21000, cat:"jewelry", img:"jewelry30.jpg"},
   {name:"Hazaragi jewelry ", price:22000, cat:"jewelry", img:"jewelry31.jpg"},
   {name:" Hazara jewelry", price:24000, cat:"jewelry", img:"jewelry32.jpg"},

@@ -48,12 +48,16 @@ height:220px;
 
 /* ===== IMAGES ===== */
 .img-fluid {
-  max-height: 400px;
-  width: 100%;
+  max-height: 500px;
+  width: 380px;
   object-fit: cover;
   border-radius: 20px;
 }
-
+.hero-img{
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+}
 /* ===== CATEGORY ===== */
 .category-card {
   display: block;
