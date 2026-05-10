@@ -397,43 +397,29 @@ if(localStorage.getItem("theme") === "dark"){
 let searchBox = document.getElementById("searchBox");
 let category = document.getElementById("category");
 
-/* ================= SEARCH SYSTEM ================= */
+// SEARCH
 
-function filterAndSearch(){
+const searchInput = document.querySelector(".amazon-search input");
+const searchBtn = document.querySelector(".amazon-search button");
 
-  let keyword = searchBox.value.trim().toLowerCase();
-  let cat = category.value;
+searchBtn.addEventListener("click", () => {
 
-  let result = allProducts.filter(p => {
+    let value = searchInput.value;
 
-    let matchText =
-      p.name.toLowerCase().includes(keyword) ||
-      p.cat.toLowerCase().includes(keyword);
+    if(value.trim() === ""){
+        alert("Please write something...");
+    }else{
+        alert("Searching for: " + value);
+    }
 
-    let matchCat = (cat === "all" || p.cat === cat);
+});
 
-    return matchText && matchCat;
-  });
+// ENTER KEY
 
-  displayProducts(result);
-}
+searchInput.addEventListener("keyup", function(e){
 
-/* ================= EVENTS ================= */
+    if(e.key === "Enter"){
+        searchBtn.click();
+    }
 
-if(searchBox && category){
-  searchBox.addEventListener("input", filterAndSearch);
-  category.addEventListener("change", filterAndSearch);
-}
-let searchForm = document.getElementById("searchForm");
-
-if(searchForm){
-  searchForm.addEventListener("submit", function(e){
-    e.preventDefault();
-    filterAndSearch();
-  });
-}
-
-
-
-
-
+});
