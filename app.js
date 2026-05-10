@@ -401,20 +401,41 @@ let category = document.getElementById("category");
 
 const searchInput = document.querySelector(".amazon-search input");
 const searchBtn = document.querySelector(".amazon-search button");
+searchBtn.addEventListener("click", searchProducts);
 
-searchBtn.addEventListener("click", () => {
+function searchProducts(){
 
-    let value = searchInput.value;
+    let value =
+    searchInput.value.toLowerCase().trim();
 
-    if(value.trim() === ""){
-        alert("Please write something...");
-    }else{
-        alert("Searching for: " + value);
+    let selectedCategory =
+    category.value.toLowerCase();
+
+    let filtered = allProducts.filter(product => {
+
+        let matchName =
+        product.name.toLowerCase().includes(value);
+
+        let matchCategory =
+        selectedCategory === "all" ||
+        product.cat === selectedCategory;
+
+        return matchName && matchCategory;
+
+    });
+
+    displayProducts(filtered);
+
+searchInput.addEventListener("keyup", function(e){
+
+    if(e.key === "Enter"){
+        searchProducts();
     }
 
 });
 
-// ENTER KEY
+}
+
 
 searchInput.addEventListener("keyup", function(e){
 
