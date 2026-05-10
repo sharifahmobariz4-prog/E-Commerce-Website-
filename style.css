@@ -13,13 +13,90 @@ padding-top: 120px;
   overflow-x:hidden;
   
 }
-@media(max-width:768px){
-body{
-padding-top:180px;
-}
-}
-@media (max-width: 768px) {
+@media (max-width:768px){
 
+  body{
+    padding-top:170px;
+    padding-bottom:80px;
+  }
+
+  /* TOP BAR */
+  .top-bar .container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+  }
+
+  /* LOGO */
+  .logo-img{
+    width:70px;
+    height:auto;
+  }
+
+  /* LOGIN + CART */
+  .top-bar .d-flex.gap-2{
+    margin-left:auto;
+  }
+
+  /* SEARCH CENTER */
+  #searchForm{
+    order:3;
+    width:100% !important;
+    margin-top:10px;
+    flex-direction:row !important;
+  }
+
+  #category{
+    max-width:100px;
+  }
+
+  #searchBox{
+    width:100%;
+  }
+
+  /* HIDE BIG NAVBAR */
+  .main-navbar{
+    position:fixed;
+    bottom:0;
+    top:auto;
+    width:100%;
+    z-index:9999;
+    border-top:none;
+  }
+
+  .main-navbar .container{
+    justify-content:center;
+  }
+
+  .navbar-nav{
+    width:100%;
+    display:flex;
+    flex-direction:row !important;
+    justify-content:space-around;
+    align-items:center;
+  }
+
+  .navbar-nav .nav-item{
+    margin:0 !important;
+  }
+
+  .navbar-nav .nav-link{
+    font-size:14px;
+    padding:10px 5px;
+  }
+
+  /* HIDE TOGGLER */
+  .navbar-toggler{
+    display:none;
+  }
+
+  /* SHOW MENU ALWAYS */
+  .navbar-collapse{
+    display:block !important;
+  }
+}
   /* TOP BAR بالا */
   .top-bar {
     display: flex;
@@ -44,10 +121,6 @@ padding-top:180px;
   .main-navbar {
     top: 60px;
   }
-}
-
-
-
 
 
 @media(max-width:576px){
