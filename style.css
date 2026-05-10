@@ -19,11 +19,11 @@ padding-top: 120px;
 
 .top-header{
     width:100%;
-    padding:10px 0;
+    padding:5px 0;
     position:fixed;
     top:0;
     left:0;
-    z-index:9999;
+    z-index:99;
 }
 
 .header-wrapper{
@@ -139,13 +139,13 @@ padding-top: 120px;
 /* ===== NAVBAR ===== */
 
 .custom-navbar{
-    margin-top:72px;
+    margin-top:20px;
 }
 
 /* ===== BODY ===== */
 
 body{
-    padding-top:130px;
+    padding-top:40px;
 }
 
 /* ===== MOBILE ===== */
@@ -167,11 +167,11 @@ body{
 }
 
 .custom-navbar{
-    margin-top:180px;
+    margin-top:100px;
 }
 
 body{
-    padding-top:240px;
+    padding-top:20px;
 }
 
 }

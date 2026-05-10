@@ -12,76 +12,108 @@
 </head>
 <body>
 
-<header>    
-<!-- TOP BAR -->
-<div class="top-bar bg-dark py-1 border-bottom border-secondary fixed-top">
-  <div class="container d-flex align-items-center gap-3">
+<!-- TOP HEADER -->
+<header>
 
-    <!-- LOGO -->
-    <a href="index.html">
-      <img src="logo1.png" class="logo-img" alt="Sharifah Shop Logo">
-    </a>
+<div class="top-header bg-dark">
 
-    <!-- SEARCH -->
-    <form id="searchForm" class="d-flex mx-auto" style="width:600px;">
+<div class="container-fluid">
 
-      <select id="category" class="form-select" style="max-width:120px; border-radius:0;">
-        <option value="all">All</option>
-        <option value="dress">Dress</option>
-        <option value="shoes">Shoes</option>
-        <option value="jewelry">Jewelry</option>
-      </select>
+<div class="header-wrapper">
 
-      <input type="text"
-             id="searchBox"
-             class="form-control"
-             placeholder="Search products...">
+<!-- LOGO -->
+<div class="logo-box">
+<a href="index.html">
+<img src="ogo1.png" alt="Sharifah Shop">
+</a>
+</div>
 
-    
-    </form>
+<!-- AMAZON SEARCH -->
+<div class="amazon-search">
 
-    <!-- RIGHT -->
-    <div class="d-flex gap-2">
+<select id="category">
+<option>All</option>
+<option>Dress</option>
+<option>Shoes</option>
+<option>Jewelry</option>
+</select>
 
-      <a href="login.html" class="btn btn-outline-light btn-sm">Login</a>
+<input type="text" placeholder="Search products...">
 
-      <a href="cart.html" class="btn btn-warning btn-sm">
-        Cart (<span id="cart-count">0</span>)
-      </a>
+<button>
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
 
-    </div>
+</div>
 
-  </div>
+<!-- RIGHT BUTTONS -->
+<div class="header-buttons">
+
+<a href="login.html" class="login-btn">
+Login
+</a>
+
+<a href="cart.html" class="cart-btn">
+<i class="fa-solid fa-cart-shopping"></i>
+Cart (<span id="cart-count">0</span>)
+</a>
+
+</div>
+
+</div>
+</div>
 </div>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black main-navbar">
-  <div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-black custom-navbar">
 
-    <button class="btn btn-light btn-sm" onclick="toggleDark()">🌙</button>
+<div class="container">
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<button class="btn btn-light btn-sm me-3" onclick="toggleDark()">
+🌙
+</button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+<button class="navbar-toggler"
+type="button"
+data-bs-toggle="collapse"
+data-bs-target="#navbarContent">
 
-      <ul class="navbar-nav">
+<span class="navbar-toggler-icon"></span>
 
-        <li class="nav-item mx-3"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item mx-3"><a class="nav-link active" href="shop.html">Shop</a></li>
-        <li class="nav-item mx-3"><a class="nav-link active" href="about.html">About Us</a></li>
-        <li class="nav-item mx-3"><a class="nav-link active" href="contact.html">Contact Us</a></li>
-        <li class="nav-item mx-3"><a class="nav-link active" href="checkout.html">Checkout</a></li>
+</button>
+
+<div class="collapse navbar-collapse justify-content-center"
+id="navbarContent">
+
+<ul class="navbar-nav">
+
+<li class="nav-item mx-3">
+<a class="nav-link active" href="index.html">Home</a>
+</li>
+
+<li class="nav-item mx-3">
+<a class="nav-link" href="shop.html">Shop</a>
+</li>
+
+<li class="nav-item mx-3">
+<a class="nav-link" href="about.html">About Us</a>
+</li>
+
+<li class="nav-item mx-3">
+<a class="nav-link" href="contact.html">Contact Us</a>
+</li>
+
+<li class="nav-item mx-3">
+<a class="nav-link" href="checkout.html">Checkout</a>
+</li>
 
 </ul>
+
 </div>
- </div>
+</div>
 </nav>
+
 </header>
-
-
-
 
 <!-- HERO SECTION -->
 <section style="background: #ffe6f0;" class="py-5">
