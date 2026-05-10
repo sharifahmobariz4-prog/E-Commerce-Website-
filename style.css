@@ -13,20 +13,18 @@ padding-top: 120px;
   overflow-x:hidden;
   
 }
-@media(max-width:768px){
-body{
-padding-top:220px;
-}
-}
-@media (max-width: 768px){
-  body{
-    padding-top: 160px;
-  }
 
-  .main-navbar{
-    top: 60px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width:576px){
 
 .card img{
@@ -34,7 +32,7 @@ height:220px;
 }
 
 }
-/* ===== NAVBAR ===== */
+
 
 .logo-img {
   width: 100px;
@@ -215,23 +213,6 @@ height:220px;
   font-weight: 800;
   color: #16050d;  
  }
-
-/* SEARCH */
-form .form-control,
-form .form-select,
-form .btn{
-  height: 44px;
-}
-
-/* MENU */
-.navbar-nav .nav-link{
-  font-size: 17px;
-  font-weight: 500;
-}
-
-.navbar-nav .nav-link:hover{
-  color: #ffc107 !important;
-}
 
 /* BACKGROUND */
 .login-bg{
@@ -481,21 +462,6 @@ line-height:1.3;
 
 }
 
-@media(max-width:768px){
-
-#searchForm{
-width:100% !important;
-flex-direction:column;
-}
-
-#category{
-width:100%;
-border-right:none;
-border-bottom:1px solid #ddd;
-}
-
-}
-
 @keyframes fadeUp{
   from{
     opacity:0;
@@ -563,25 +529,6 @@ border-bottom:1px solid #ddd;
 
 .footer-section a:hover{
   color:white;
-}
-
-/* TOP BAR */
-.top-bar{
-position:fixed;
-top:0;
-left:0;
-width:100%;
-z-index:1050;
-}
-
-/* MAIN NAVBAR */
-.main-navbar{
-position:fixed;
-border-top: 1px solid white;
-top:70px; 
-left:0;
-width:100%;
-z-index:1040;
 }
 
 .card img{
@@ -766,53 +713,55 @@ body.dark{
 .background{
 background:var(--pink);
  }
-
- /* =====   SEARCH BAR ===== */
-#searchForm{
-  display:flex;
-  align-items:center;
+/* TOP BAR */
+.top-bar{
+  position:fixed;
+  top:0;
+  left:0;
   width:100%;
-  max-width:600px;
-  background:#fff;
-  border:1px solid #ddd;
-  overflow:hidden;
-  flex:1;
+  z-index:1050;
 }
 
-/* CATEGORY */
-#category{
-  border:none;
-  outline:none;
-  background:#f1f1f1;
-  padding:10px 12px;
-  border-right:1px solid #ddd;
-  cursor:pointer;
+/* MAIN NAVBAR */
+.main-navbar{
+  position:fixed;
+  top:60px;
+  left:0;
+  width:100%;
+  z-index:1040;
+  border-top:1px solid white;
 }
 
-/* INPUT */
-#searchBox{
-  flex:1;
-  border:none;
-  outline:none;
-  padding:10px 12px;
+/* BODY SPACE */
+body{
+  padding-top:140px;
 }
 
 /* MOBILE */
-@media (max-width:768px){
+@media(max-width:768px){
 
+  body{
+    padding-top:220px;
+  }
+
+  .main-navbar{
+    top:60px;
+  }
+
+  
   #searchForm{
+    display:flex;
     flex-direction:column;
-    max-width:100%;
     width:100%;
+    gap:8px;
+    margin-top:10px;
+    position:relative;
+    z-index:2000;
   }
 
-  #category{
-    width:100%;
-    border-right:none;
-    border-bottom:1px solid #ddd;
-  }
-
-  #searchBox{
+  #category,
+  #searchBox,
+  #searchForm button{
     width:100%;
   }
 
