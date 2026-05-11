@@ -179,7 +179,7 @@ body{
 /* SEARCH */
 
 .amazon-search{
-    width:100px;
+    width:100%;
     max-width:100%;
     height:45px;
 }
@@ -203,7 +203,7 @@ padding: 0 8px;
 /* NAVBAR */
 
 .custom-navbar{
-    margin-top:5px;
+    margin-top:0;
 }
 
 .custom-navbar .navbar-nav{
