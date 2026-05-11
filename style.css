@@ -9,7 +9,6 @@ body{
   font-family:'Poppins', sans-serif;
   background:#fff7fb;
   color:#111;
-padding-top: 120px;
   overflow-x:hidden;
   
 }
@@ -180,14 +179,15 @@ body{
 /* SEARCH */
 
 .amazon-search{
-    width:60حط;
+    width:100px;
     max-width:100%;
     height:45px;
 }
 
 .amazon-search select{
-    padding: 8px 18px;
-    font-size:13px;
+  width: 70px;
+padding: 0 8px;
+    font-size:12x;
 }
 
 .amazon-search input{
@@ -203,7 +203,7 @@ body{
 /* NAVBAR */
 
 .custom-navbar{
-    margin-top:10 px;
+    margin-top:5px;
 }
 
 .custom-navbar .navbar-nav{
