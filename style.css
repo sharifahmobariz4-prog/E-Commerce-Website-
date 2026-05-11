@@ -203,7 +203,7 @@ body{
 /* NAVBAR */
 
 .custom-navbar{
-    margin-top:40px ;
+    margin-top:40 px;
 }
 
 .custom-navbar .navbar-nav{
@@ -213,7 +213,7 @@ body{
 /* BODY SPACE */
 
 body{
-    padding-top:40px;
+    padding-top:260px;
 }
 
 }
