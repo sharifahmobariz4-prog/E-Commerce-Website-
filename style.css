@@ -732,22 +732,6 @@ body.dark{
   background:#522648 !important;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* TOP BAR */
 .dark .border-bottom{
   border-color:#333 !important;
@@ -776,10 +760,6 @@ body.dark{
 .dark textarea::placeholder{
   color:#bbb;
 }
-
-
-
-
 
 /* CARDS */
 .dark .card,
